@@ -2,9 +2,18 @@
   text-align: center;
 }
 
+.main-nav-active {
+  color: tomato;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid rgb(128, 109, 0);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,5 +43,30 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.country-img {
+  height: 130px;
+}
+.card {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.card :hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .country-img {
+    height: 110px;
   }
 }
